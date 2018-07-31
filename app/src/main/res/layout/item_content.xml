@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Liner_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Linear_question"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        //single choice
+
+        <LinearLayout
+            android:id="@+id/Liner_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/radioGroup_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <RadioButton
+                    android:id="@+id/radio_option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:text="Option 1"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:text="Option 2"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:text="Opton 3"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:focusable="false"
+                    android:text="Opton 4"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+
+            </RadioGroup>
+            <!--<RadioGroup
+                android:id="@+id/radioGroup_optionid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_optionid1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:visibility="visible"
+                    android:text="Option 1" />
+
+
+                <RadioButton
+                    android:id="@+id/radio_optionid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:checked="false"
+                    android:text="Option 2" />
+
+
+
+                <RadioButton
+                    android:id="@+id/radio_optionid3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:checked="false"
+                    android:text="Opton 3" />
+
+
+
+                <RadioButton
+                    android:id="@+id/radio_optionid4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:checked="false"
+                    android:text="Opton 4" />
+
+
+
+            </RadioGroup>-->
+
+
+        </LinearLayout>
+
+
+        //Multiple Selection
+
+        <LinearLayout
+            android:id="@+id/Liner_multiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/checkbox_option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:text=" I really enjoy this lesson."
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/checkbox_option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:text="I will prefer this lesson over any other."
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/checkbox_option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:text="I would like to hear more from you."
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/checkbox_option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:text="I am satisfied with the content and full description."
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        //comment
+
+        <LinearLayout
+            android:id="@+id/Liner_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EditText_comments"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="top|left"
+                android:hint="Comments"
+                android:inputType="text|textShortMessage"
+                android:lines="6"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/md_grey_700"
+                android:textColorHint="@color/md_grey_400"
+                android:textCursorDrawable="@drawable/cursor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
